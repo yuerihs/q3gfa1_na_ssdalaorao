@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number 3</title>
+</head>
+<body>
+    <script>
+        var nickname = "Shire";
+        var height = 63;
+        var weight = 58;
+        
+        var convertheight = Math.floor(height/12);
+        var convertheight2 = height%12;
+        var convertweight = weight * 2.205;
+
+        if(convertheight2>0)
+        alert('Name: ' + nickname + '\nHeight:' + convertheight + '\'' + convertheight2 + '\"' + '\nWeight:' + convertweight + ' lbs');
+        else
+        alert('Name: ' + nickname + '\nHeight:' + convertheight + '\'' + '\nWeight:' + convertweight + ' lbs');
+        
+        let text = "Do you agree to share your personal information with this site?";
+
+        if (confirm(text)==true){
+            if (convertheight2>0)
+            document.write('Name: ' + nickname + '<br>Height:' + convertheight + '\'' + convertheight2 + '\"' + '<br>Weight:' + convertweight + ' lbs');
+            else
+            document.write('Name: ' + nickname + '<br>Height:' + convertheight + '\'' + '<br>Weight:' + convertweight + ' lbs');
+        }
+        else{
+            document.write("User does not wish to share his/her personal information");
+        }
+    </script>
+</body>
+</html>
